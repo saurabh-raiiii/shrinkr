@@ -45,7 +45,7 @@ export const addUrl = async (req, res) => {
 
         return res.status(201).json({
             success: true,
-            url: `${process.env.MY_URI}/${code}`,
+            url: `https://shrinkr-auv1.onrender.com/${code}`,
             message: "URL shortened successfully"
         });
 
