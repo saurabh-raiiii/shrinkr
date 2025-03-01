@@ -20,7 +20,7 @@ function Home() {
 
         try {
             axios.defaults.withCredentials = true;
-            const { data } = await axios.post('http://localhost:4000/api/shorten', { url: input });
+            const { data } = await axios.post('https://shrinkr-auv1.onrender.com/api/shorten', { url: input });
             if (data.success) {
                 setShrinkedUrl(data.url);
                 toast.success(data.message);
