@@ -2,7 +2,7 @@ const char = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', '
 
 const codeGenerator = () => {
     let uniqueCode = "";
-    let len = 8
+    let len = 7
     while(len--){
         const randomNumber = Math.floor(Math.random() * 62);
         uniqueCode += char[randomNumber];
